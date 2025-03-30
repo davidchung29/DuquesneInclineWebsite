@@ -1,0 +1,61 @@
+/* ABOUT PAGE LAYOUT */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; /* space between columns */
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+  }
+  
+  /* History (left column) */
+  .about-history {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-history h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .about-history p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Membership card image styling */
+  .history-image {
+    display: block;          
+    margin: 1rem auto 0;      
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Society (right column) */
+  .about-society {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-society h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .about-society p {
+    margin-bottom: 1rem;
+  }
+  
+  .society-image {
+    display: block;          
+    margin: 1rem auto 0;      
+    max-width: 200%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  

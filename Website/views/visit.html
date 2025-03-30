@@ -15,8 +15,8 @@
     rel="stylesheet"
   />
 
-  <!-- Main stylesheet (adjust the path if needed) -->
   <link rel="stylesheet" href="../static/style.css" />
+  <link rel="stylesheet" href="../static/visit.css" />
 </head>
 <body>
 
@@ -35,9 +35,9 @@
       <div class="nav-right">
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../views/about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="visit.html" class="active">Visit</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -56,61 +56,64 @@
       <div class="tour-cards">
         <!-- Tour Card 1 -->
         <div class="tour-card">
-          <img src="../assets/mollys_trolley.jpg" alt="Molly's Trolley" />
+          <a href="https://www.mollystrolleyspgh.com/" target="_blank">
+            <img src="../assets/mollys_trolley.jpg" alt="Molly's Trolley" />
+          </a>
           <h3>Molly's Trolley</h3>
           <p>Experience a classic trolley ride through the heart of Pittsburgh.</p>
-          <button class="btn">Visit Website</button>
         </div>
 
         <!-- Tour Card 2 -->
         <div class="tour-card">
-          <img src="../assets/rivers_of_steel.jpg" alt="River of Steel Tour" />
+          <a href="https://riversofsteel.com/" target="_blank">
+            <img src="../assets/rivers_of_steel.jpg" alt="River of Steel Tour" />
+          </a>
           <h3>River of Steel</h3>
           <p>Explore Pittsburgh’s industrial heritage on a scenic river cruise.</p>
-          <button class="btn">Visit Website</button>
         </div>
 
         <!-- Tour Card 3 -->
         <div class="tour-card">
-          <img src="../assets/pittsburgh_tour_company.jpg" alt="Pittsburgh Tour Company" />
+          <a href="https://www.pghtours.com/" target="_blank">
+            <img src="../assets/pittsburgh_tour_company.jpg" alt="Pittsburgh Tour Company" />
+          </a>
           <h3>Pittsburgh Tour Company</h3>
           <p>Hop on a double-decker bus for a fun, narrated city tour.</p>
-          <button class="btn">Visit Website</button>
         </div>
       </div>
     </section>
 
     <!-- SELF-GUIDED TOUR SECTION -->
-    <section class="self-guided" style="margin-bottom: 2rem;">
+    <section class="self-guided">
       <h2>Self-guided Tour</h2>
       <p>
         Prefer to explore on your own? Our self-guided tour highlights the city’s most iconic spots:
       </p>
-      <ul style="margin-left: 1.5rem; list-style-type: disc;">
+      <ul>
         <li>Start at the Duquesne Incline Station</li>
         <li>Walk along Grandview Avenue for panoramic skyline views</li>
-        <li>Stroll down to Station Square for shopping [&] dining</li>
+        <li>Stroll down to Station Square for shopping and dining</li>
         <li>Cross the Smithfield Street Bridge to downtown Pittsburgh</li>
       </ul>
     </section>
 
     <!-- FIELD TRIPS SECTION -->
-    <section class="field-trips" style="margin-bottom: 2rem;">
+    <section class="field-trips">
       <h2>Field Trips</h2>
       <p>
         Planning a group visit or school field trip? We offer special group rates and educational tours.
         Fill out our online request form or call our office to make a reservation.
       </p>
-      <button class="btn">Submit Request</button>
+      <a class="btn" href="https://form.jotform.com/240705601606145" target="_blank">Submit Request</a>
     </section>
 
     <!-- MAP VIEW SECTION -->
-    <section class="map-view" style="margin-bottom: 2rem;">
+    <section class="map-view">
       <h2>Map View</h2>
-      <!-- Replace the src with your own Google Maps embed link -->
-      <div style="margin-top: 1rem;">
+      <!-- Duquesne Incline map embed with a pin -->
+      <div class="map-container">
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97159.03821419687!2d-80.06573398875916!3d40.440624805711125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f1469fb7484f%3A0x9dc47662bb8aa871!2sPittsburgh%2C%20PA!5e0!3m2!1sen!2sus!4v1686257664959!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12146.392290993133!2d-80.03666491284181!3d40.439898000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af9e6ab935%3A0xe871d2bbc2032b83!2sDuquesne%20Incline!5e0!3m2!1sen!2sus!4v1743367535975!5m2!1sen!2sus" 
           width="100%" 
           height="400" 
           style="border:0;" 
@@ -119,10 +122,10 @@
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
-    </section>
+    </section>    
 
     <!-- GIFT SHOP SECTION -->
-    <section class="gift-shop" style="margin-bottom: 2rem;">
+    <section class="gift-shop">
       <h2>Gift Shop Featured Selection</h2>
       <div class="gift-cards">
         <div class="gift-card">

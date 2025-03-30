@@ -18,6 +18,7 @@
   />
 
   <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="static/home.css" />
 </head>
 <body>
 
@@ -38,7 +39,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="views/about.html">About</a></li>
           <li><a href="views/visit.html">Visit</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="views/contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -139,46 +140,20 @@
       <h3>Reviews</h3>
       <div class="review-cards">
         <div class="review-card">
-          <p>"A fantastic piece of Pittsburgh history!"</p>
+          <img src="assets/joshua_hwang.jpg" alt="Joshua Hwang Review" />
+          <p>"Type shoot was tough." </p>
         </div>
         <div class="review-card">
+          <img src="assets/ein_jeong.jpg" alt="Ein Jeong Review" />
           <p>"Incredible views and a smooth ride."</p>
         </div>
         <div class="review-card">
-          <p>"A must-see for any visitor to the city."</p>
+          <img src="assets/ace_yeom.jpg" alt="Ace Yeom Review" />
+          <p>"This is my go-to spot in Pittsburgh. The lights, scenery, everything about Duquesne Incline is spectacular."</p>
         </div>
       </div>
     </section>
 
-  <section class="mailing-list-banner">
-      <h2>Join Our Mailing List</h2>
-      <p>Sign up to receive the latest news and updates from the Duquesne Incline.</p>
-      <form id="mailing-list-form" action="#" method="post">
-        <div>
-          <label for="name">Name <span>*</span></label>
-          <input type="text" id="name" name="name" required minlength="2" maxlength="50" placeholder="Your name" />
-        </div>
-        <div>
-          <label for="email">Email Address <span>*</span></label>
-          <input type="email" id="email" name="email" required placeholder="you@example.com" />
-        </div>
-        <div>
-          <input type="checkbox" id="sms" name="sms" />
-          <label for="sms">Receive messages via SMS text</label>
-        </div>
-        <div>
-          <label for="phone">Mobile Phone</label>
-          <input type="tel" id="phone" name="phone" pattern="^\d+$" placeholder="1234567890" minlength="10" maxlength="15" />
-        </div>
-        <div>
-          <label for="zipcode">Zip Code</label>
-          <input type="text" id="zipcode" name="zipcode" pattern="^\d{5}$" placeholder="15222" minlength="5" maxlength="5" />
-        </div>
-        <div>
-          <button type="submit" class="btn">Subscribe</button>
-        </div>
-      </form>
-    </section>
   </main>
 
   <!-- FOOTER -->

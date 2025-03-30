@@ -1,0 +1,82 @@
+/* Tours Cards */
+.city-tours {
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+  }
+  
+  .tour-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+  
+  .tour-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Gift Shop Cards */
+  .gift-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .gift-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .gift-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+  }  
+
+/* Self-guided Tour Section: bottom margin */
+.self-guided {
+    margin-bottom: 2rem;
+  }
+  
+  /* Self-guided tour list styling */
+  .self-guided ul {
+    margin-left: 1.5rem;
+    list-style-type: disc;
+  }
+  
+  /* Field Trips Section: bottom margin */
+  .field-trips {
+    margin-bottom: 2rem;
+  }
+  
+  /* Map View Section: bottom margin */
+  .map-view {
+    margin-bottom: 2rem;
+  }
+  
+  /* Map Container: top margin for the div wrapping the iframe */
+  .map-container {
+    margin-top: 1rem;
+  }
+  
+  /* Gift Shop Section: bottom margin */
+  .gift-shop {
+    margin-bottom: 2rem;
+  }
+  
