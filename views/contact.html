@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Include jQuery from a CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Your custom script -->
+  <script src="../static/script.js"></script>
+  <title>Contact - Duquesne Incline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts: Inria Serif & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Inter:wght@300;400;700&display=swap" 
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+
+  <!-- HEADER / HERO SECTION -->
+  <header>
+    <nav>
+      <!-- Left: Logo -->
+      <div class="nav-left">
+        <img src="../assets/logo.png" alt="Duquesne Incline Logo" class="header-logo" />
+      </div>
+      <!-- Center: Site Title -->
+      <div class="nav-center">
+        <h1>Duquesne Incline</h1>
+      </div>
+      <!-- Right: Navigation Links -->
+      <div class="nav-right">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <!-- Contact Form Section -->
+    <section class="mailing-list-banner">
+        <h2>Join Our Mailing List</h2>
+        <p>Sign up to receive the latest news and updates from the Duquesne Incline.</p>
+        <form id="mailing-list-form" action="#" method="post">
+          <div>
+            <label for="name">Name <span>*</span></label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="50" placeholder="Your name" />
+          </div>
+          <div>
+            <label for="email">Email Address <span>*</span></label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+          </div>
+          <div>
+            <input type="checkbox" id="sms" name="sms" />
+            <label for="sms">Receive messages via SMS text</label>
+          </div>
+          <div>
+            <label for="phone">Mobile Phone</label>
+            <input type="tel" id="phone" name="phone" pattern="^\d+$" placeholder="1234567890" minlength="10" maxlength="15" />
+          </div>
+          <div>
+            <label for="zipcode">Zip Code</label>
+            <input type="text" id="zipcode" name="zipcode" pattern="^\d{5}$" placeholder="15222" minlength="5" maxlength="5" />
+          </div>
+          <div>
+            <button type="submit" class="btn">Subscribe</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Duquesne Incline &copy; 2025</p>
+  </footer>
+
+</body>
+</html>

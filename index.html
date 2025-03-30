@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Include jQuery from a CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Your custom script -->
+  <script src="static/script.js"></script>
+  <title>Duquesne Incline - Pittsburgh's #1 Cityscape View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts: Inria Serif & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Inter:wght@300;400;700&display=swap" 
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="static/style.css" />
+  <link rel="stylesheet" href="static/home.css" />
+</head>
+<body>
+
+  <!-- HEADER / HERO SECTION -->
+  <header>
+    <nav>
+      <!-- Left: Logo -->
+      <div class="nav-left">
+        <img src="assets/logo.png" alt="Duquesne Incline Logo" class="header-logo" />
+      </div>
+      <!-- Center: Site Title -->
+      <div class="nav-center">
+        <h1>Duquesne Incline</h1>
+      </div>
+      <!-- Right: Navigation Links -->
+      <div class="nav-right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="views/about.html">About</a></li>
+          <li><a href="views/visit.html">Visit</a></li>
+          <li><a href="views/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Pittsburgh's #1 Cityscape View</h1>
+      <p>Ride the Duquesne Incline</p>
+      <div class="info-row">
+        <div>Open Today: 6:30 AM - 12:30 AM</div>
+        <div id="temperature">Loading temperature...</div>
+        <div id="weather-description">Loading weather...</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <!-- Best View Section -->
+    <section class="best-view">
+      <h2>Best View in Pittsburgh Year Round</h2>
+      <p>Experience breathtaking city views and a unique ride any time of the year!</p>
+      <div class="view-cards">
+        <div class="view-card">
+          <img src="assets/day.jpg" alt="Pittsburgh in the day" />
+          <h4>In the Day</h4>
+          <p>Enjoy bright sunshine and a panoramic skyline.</p>
+        </div>
+        <div class="view-card">
+          <img src="assets/snow.jpg" alt="Pittsburgh in the snow" />
+          <h4>In the Snow</h4>
+          <p>Marvel at the city blanketed in a winter wonderland.</p>
+        </div>
+        <div class="view-card">
+          <img src="assets/night.jpg" alt="Pittsburgh at night" />
+          <h4>At Night</h4>
+          <p>Watch the city lights shimmer against the dark sky.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="hours">
+      <h3>Hours</h3>
+      <p>We are open 365 days a year</p>
+      <p>From 6:30 AM to 12:30 AM</p>
+    </section>
+
+    <!-- Fares Section -->
+    <section class="fares">
+      <h3>Fares</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Standard Fares</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Adults (Ages 12+)</td>
+            <td>$2.50 Each Way</td>
+          </tr>
+          <tr>
+            <td>Children (Ages 6-11)</td>
+            <td>$1.25 Each Way</td>
+          </tr>
+          <tr>
+            <td>Children (Under 6)</td>
+            <td>Free</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Group Rates</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Group Size</th>
+            <th>Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Groups of 10 or more</td>
+            <td>$2.00 Each Way</td>
+          </tr>
+          <tr>
+            <td>School Groups</td>
+            <td>$1.50 Each Way</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Cash fares [&]  valid Port Authority passes are accepted.</p>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+      <h3>Reviews</h3>
+      <div class="review-cards">
+        <div class="review-card">
+          <img src="assets/joshua_hwang.jpg" alt="Joshua Hwang Review" />
+          <p>"Type shoot was tough." </p>
+        </div>
+        <div class="review-card">
+          <img src="assets/ein_jeong.jpg" alt="Ein Jeong Review" />
+          <p>"Incredible views and a smooth ride."</p>
+        </div>
+        <div class="review-card">
+          <img src="assets/ace_yeom.jpg" alt="Ace Yeom Review" />
+          <p>"This is my go-to spot in Pittsburgh. The lights, scenery, everything about Duquesne Incline is spectacular."</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Duquesne Incline &copy; 2025</p>
+  </footer>
+
+</body>
+</html>
