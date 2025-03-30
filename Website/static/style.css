@@ -1,0 +1,472 @@
+/* 1. BASIC RESET & GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2F4F7;
+  color: #020205;
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Inria Serif", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #E43A19;
+  color: #F2F4F7;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #111F40;
+}
+
+/* VIDEO CONTAINER STYLES */
+.video-container {
+  max-width: 800px;      /* Limit the width to something smaller */
+  margin: 2rem auto;     /* Center and add vertical spacing */
+  text-align: center;
+  border-radius: 4px;    /* Rounded corners like your images */
+  overflow: hidden;      /* Ensure the iframe respects the rounded corners */
+}
+
+.video-container .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.video-container .video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  /* Inherit border-radius from container if needed */
+  border-radius: inherit;
+}
+
+
+/* 2. HEADER / HERO SECTION */
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full viewport height */
+  
+  /* Background image */
+  background-image: url("../assets/night.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Remove fixed so the background scrolls (we’ll control the speed via JS) */
+  /* background-attachment: fixed; */
+  
+  color: #F2F4F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  transform-style: preserve-3d; /* Ensures children are rendered in 3D space */
+  padding: 0 1rem;
+}
+
+.hero-content h1 {
+  font-size: 4.5rem; /* Increased headline size */
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 2rem; /* Bigger subheading */
+  margin-bottom: 2rem;
+}
+
+/* Navigation: Using a grid to center the title and place the logo left */
+nav {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+.nav-left {
+  justify-self: start;
+}
+
+.nav-center {
+  justify-self: center;
+  text-align: center;
+}
+
+.nav-right {
+  justify-self: end;
+}
+
+.nav-left .header-logo {
+  max-height: 50px;
+}
+
+.nav-center h1 {
+  font-size: 1.8rem;
+  color: #F2F4F7;
+  margin: 0;
+}
+
+.nav-right ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-right ul li a {
+  color: #F2F4F7;
+  font-weight: 600;
+}
+
+/* Hero Content (repeat) */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.info-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* 3. MAIN CONTENT */
+main {
+  margin-top: 2rem;
+}
+
+.best-view {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.best-view h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.best-view p {
+  text-align: center;
+  margin-bottom: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.view-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Ensure all view images have the same fixed dimensions */
+.view-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.hours, .fares, .reviews {
+  margin-bottom: 2rem;
+}
+
+.hours h3, .fares h3, .reviews h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.review-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+/* 4. FOOTER */
+footer {
+  background-color: #111F45;
+  color: #F2F4F7;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* MAILING LIST */
+/* Mailing List Banner */
+.mailing-list-banner {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem; /* Added bottom margin as a buffer */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mailing-list-banner h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.mailing-list-banner p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.mailing-list-banner form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.mailing-list-banner form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mailing-list-banner form label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.mailing-list-banner form input[type="text"],
+.mailing-list-banner form input[type="email"],
+.mailing-list-banner form input[type="tel"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mailing-list-banner form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.mailing-list-banner form button[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  background-color: #E43A19;
+  color: #F2F4F7;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  transition: background 0.3s ease;
+}
+
+.mailing-list-banner form button[type="submit"]:hover {
+  background-color: #c23012;
+}
+
+/* ABOUT PAGE LAYOUT */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem; /* space between columns */
+  margin-bottom: 2rem;
+  margin-top: 2.5rem;
+}
+
+/* History (left column) */
+.about-history {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.about-history h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.about-history p {
+  margin-bottom: 1rem;
+}
+
+/* Membership card image styling */
+.history-image {
+  display: block;          
+  margin: 1rem auto 0;      
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Society (right column) */
+.about-society {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.about-society h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.about-society p {
+  margin-bottom: 1rem;
+}
+
+.society-image {
+  display: block;          
+  margin: 1rem auto 0;      
+  max-width: 200%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Tours Cards */
+.city-tours {
+  margin-bottom: 2rem;
+  margin-top: 2.5rem;
+}
+
+.tour-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.tour-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.tour-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+/* Gift Shop Cards */
+.gift-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gift-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.gift-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}

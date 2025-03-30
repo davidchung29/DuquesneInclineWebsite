@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About The Duquesne Incline</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../static/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts: Inria Serif & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Inter:wght@300;400;700&display=swap" 
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet (adjust the path if necessary) -->
+  <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+
+  <!-- HEADER / HERO SECTION -->
+  <header>
+    <nav>
+      <!-- Left: Logo -->
+      <div class="nav-left">
+        <img src="../assets/logo.png" alt="Duquesne Incline Logo" class="header-logo" />
+      </div>
+      <!-- Center: Site Title -->
+      <div class="nav-center">
+        <h1>Duquesne Incline</h1>
+      </div>
+      <!-- Right: Navigation Links -->
+      <div class="nav-right">
+        <ul>
+          <!-- Highlight the 'About' link as active, if you have an .active style -->
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero content for the About page -->
+    <div class="hero-content">
+      <h1>About The Duquesne Incline</h1>
+    </div>
+  </header>
+
+<!-- VIDEO SECTION (placed above the main containers) -->
+<section class="video-container">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/bSLvrz5GraI" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <!-- ABOUT CONTENT in two columns -->
+    <section class="about-container">
+      <!-- LEFT COLUMN: History -->
+      <div class="about-history">
+        <h2>History</h2>
+        <p>
+          Ever wondered how a coal hoist transformed into a Pittsburgh icon? 
+          Back in 1854, newspapers announced the building of a hillside railway—one of several “inclines.” 
+          Over the decades, what began as a convenient way to transport coal evolved into a 
+          must-see landmark for residents and visitors alike. Despite early financial hurdles 
+          and multiple ownership changes, the Duquesne Incline continues to serve as a living 
+          piece of Pittsburgh's heritage.
+        </p>
+        <p>
+          In 1963, community efforts and philanthropic donations helped restore the incline, 
+          preserving its Victorian architecture and iconic wooden cable cars. Today, 
+          the Duquesne Incline remains a beloved symbol of Pittsburgh’s industrious spirit 
+          and enduring history.
+        </p>
+        <!-- Membership Card Image (adjust the path if needed) -->
+        <img 
+          src="../assets/duquesne1900s.jpg" 
+          alt="Old picture of Duquesne" 
+          class="history-image"
+        />
+      </div>
+
+      <!-- RIGHT COLUMN: Society -->
+      <div class="about-society">
+        <h2>Society for the Preservation of the Duquesne Heights Incline</h2>
+        <p>
+          In the mid-1960s, dedicated community members and local historians formed a neighborhood 
+          group that rescued and revitalized the Duquesne Incline. Officially organized as the 
+          Society for the Preservation of the Duquesne Heights Incline, this group continues to 
+          operate and maintain the incline for future generations.
+        </p>
+        <p>
+          Today, the Society works to balance tradition with modern needs, ensuring both visitors 
+          and locals can enjoy a safe and scenic ride. From fundraising events to volunteer 
+          opportunities, there are many ways to get involved and support the incline’s 
+          ongoing mission.
+        </p>
+        <img 
+          src="../assets/membership_card.jpg" 
+          alt="Historic Duquesne Incline Membership Card" 
+          class="society-image"
+        />
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Duquesne Incline &copy; 2025</p>
+  </footer>
+</body>
+</html>
